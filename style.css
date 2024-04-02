@@ -1,0 +1,311 @@
+:root{
+    --Very-Dark-Blue: hsl(243, 87%, 12%);
+        --Desaturated-Blue: hsl(238, 22%, 44%);
+        --Bright-Blue: hsl(224, 93%, 58%);
+        --Moderate-Cyan: hsl(170, 45%, 43%);
+        --Light-Grayish-Blue: hsl(240, 75%, 98%);
+        --Light-Gray: hsl(0, 0%, 75%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+        font-family: 'Open Sans', sans-serif;
+        font-family: 'Raleway', sans-serif;
+}
+h1,h2,h3,h4{
+    font-family: 'Fraunces', serif ;
+    font-family: 'Raleway', sans-serif;
+}
+.conteinar{
+  margin: 0 5rem;
+}
+ul{
+    list-style: none;
+}
+ a{
+  text-decoration: none;
+}
+#home{
+    height: 100vh;
+}
+#home .head{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+padding-top: 40px;
+}
+#home .head .logo img{
+    width: 150px;
+}
+#home .head nav ul{
+    display: flex;
+    
+}
+#home .head nav ul li a{
+    margin: 0 30px;
+    color: var(--Very-Dark-Blue);
+    font-family: 'Raleway',
+        sans-serif;
+}
+#home .conteinar .row,
+#body .content-body,
+#sign-in .row
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    padding: 8rem 0;
+}
+#home .row .imges img,
+#body .content-body .imges-body img
+{
+    max-width: 100%;
+}
+
+#home .row .col h1{
+    font-size: 35px;
+    line-height: 1.4;
+
+}
+#home .row .col p{
+    font-size: 16px;
+    margin: 30px 0;
+    line-height: 1.5;
+    color: var(--Very-Dark-Blue);
+}
+#home input{
+    width: 300px;
+    padding: 18px 15px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+#home button{
+    width: 150px;
+    padding: 18px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: var(--Bright-Blue);
+    cursor: pointer;
+}
+#home button:hover{
+    background-color: rgba(48, 101, 248, 0.6);
+}
+#body{
+    background: url(fylo-landing-page-with-two-column-layout-master/images/bg-curve-desktop.svg) no-repeat center center/cover;
+}
+#body .text-body h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#body .conteinar .text-body > p{
+   color: var(--Very-Dark-Blue);
+   margin: 20px 0;
+   line-height: 1.7;
+   padding-right: 5rem;
+}
+#body .text-body a{
+    color: var(--Moderate-Cyan);
+    border-bottom: 1px solid var(--Moderate-Cyan);
+}
+.text-body a:hover{
+    color: rgba(60, 159, 143, 0.6);
+}
+#body .text-body .link img{
+    width: 30px;
+    margin-bottom: -10px;
+}
+#body .content-body .box{
+    margin-top: 3rem;
+    padding: 30px;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+}
+#body .content-body .box > img{
+width: 15px;
+}
+
+#body .content-body .box p{
+    font-size: 12px;
+    margin: 15px 0;
+    line-height: 1.7;
+}
+#body .content-body .box .content-box{
+    display: flex;
+}
+#body .content-body .box .content-box img{
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+}
+#body .content-body .box .content-box h3{
+    font-size: 15px;
+    font-weight: 700;
+}
+#body .content-body .box .content-box p{
+   font-size: 10px;
+}
+#body .imges-body img {
+    width: 450px;
+    margin-left: 50px;
+}
+#sign-in{
+    background-color: var(--Desaturated-Blue);
+}
+#sign-in .row{
+    padding: 6rem 0;
+}
+
+
+#sign-in .col-1 h2{
+    font-size: 32px;
+    color: var(--Light-Grayish-Blue);
+    margin-bottom: 25px;
+    
+}
+#sign-in .col-1 p{
+    color: var(--Light-Gray);
+    margin-right: 7rem;
+    line-height: 1.5;
+}
+#sign-in .col-2 input{
+    display: block;
+        margin-bottom: 20px;
+        border: none;
+        width: 90%;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+#sign-in .col-2 .btn{
+    padding: 15px 20px;
+    background-color: var(--Bright-Blue);
+    border: none;
+    color: #fff;
+    width: 300px;
+    cursor: pointer;
+}
+#sign-in .col-2 .btn:hover{
+    background-color: rgba(101, 141, 251, 0.6);
+}
+#footer{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--Light-Gray);
+    padding: 5rem 0;
+}
+#footer .row{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+}
+#footer .logo-white{
+    margin-bottom: 1rem;
+}
+#footer .row .col-1 .info{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+#footer .row .col-1 .info img{
+    margin-right: 10px;
+}
+#footer .row li{
+    margin-bottom: 15px;
+    
+}
+#footer .row a{
+    color: var(--Light-Gray);
+}
+#footer .row .col-4 i{
+    border: 1px solid var(--Light-Gray);
+    padding: 12px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    
+}
+#footer .row .col-4 i:hover{
+    color: var(--Bright-Blue);
+}
+/* Tablet */
+@media(max-width: 1000px){
+    #home .conteinar .row,
+    #body .content-body,
+    #sign-in .row
+    {
+        grid-template-columns: 1fr;
+    }
+#home .conteinar .row,
+#body .content-body
+{
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+#home .row .col h1,
+#home .row .col p,
+#body .text-body h2,
+#body .conteinar .text-body>p,
+#sign-in
+{
+    text-align: center;
+}
+#body{
+    background: url('fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg') center center/cover no-repeat;
+}
+#body .text-body h2{
+    margin-top: 20px;
+}
+#body .text-body .link{
+    text-align: center;
+}
+#body .content-body .box{
+    margin: 2rem auto 0;
+    width: 280px;
+}
+#sign-in .col-1 p{
+    margin-right: 0;
+}
+#sign-in .col-2 input{
+    width: 100%;
+    margin: 30px 0 15px;
+}
+
+
+#footer .row{
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+#footer .row .col-4{
+    margin: auto;
+}
+
+}
+/* mobile */
+@media(max-width: 650px){
+#home .head .logo img{
+    width: 80px;
+  }
+  .conteinar {
+    margin: 0 1rem;
+  }
+  #home .head nav ul li a{
+    margin: 0 10px;
+    font-size: 14px;
+  }
+  #home .row .col h1{
+    font-size: 22px;
+    margin-top: 2rem;
+  }
+  #home .row .col p{
+    font-size: 14px;
+  }
+  #home input{
+    margin-bottom: 20px;
+  }
+
+}
